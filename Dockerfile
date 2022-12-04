@@ -1,5 +1,5 @@
 FROM openjdk:11
-FROM maven:3.3.3
+FROM maven:3.0
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve
 ADD src /tmp/build/src
